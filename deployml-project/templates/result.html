@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{'css/main.css'}">
+    <title>Sententia</title>
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <img src="./res/icons8-mind-map-96.png" alt="Logo">
+            <h2>sententia</h2>
+        </div>
+        <div class="links">
+            <ul>
+                <li>Documentation</li>
+                <li>Team</li>
+                <li>Contact us</li>
+                <li>Privacy policy</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="left">
+            <h1>The first Public<br>Sentimental Analysis<br>platform</h1>
+            <div class="para">
+                <p>What is sentiment analysis?</p>
+                <p>Sentiment Analysis is the process of ‘computationally’ determining<br> 
+                    whether a piece of writing is positive, negative or neutral. It’s also<br> 
+                    known as opinion mining, deriving the opinion or attitude of a speaker.</p>
+            </div>
+
+
+            <form action="{% url 'result' %}">
+                <input type="text" id="keyword" name="keyword" required name="keyword" placeholder="Enter keyword">
+                <input type="text" id="mail" name="mail" placeholder="Enter Mail ID">
+                <button type="submit">Submit</button>
+            </form>
+
+
+        </div>
+
+        <div class="right">
+            <h1 class="Score">69%</h1>
+            <h3>Positive</h3>
+            <img class="heroPic" src="./res/HeroSVG.svg" alt="">
+        </div>
+    </div>
+</body>
+</html>
